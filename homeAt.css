@@ -1,0 +1,143 @@
+#symbol {
+	color: white;
+}
+body{
+	background: linear-gradient(rgb(235, 202, 207),rgb(235, 200, 206));
+}
+h5{
+	font-weight: bolder;
+	border: rgb(87, 28, 99) 2px solid;
+	border-radius: 5px;
+}
+
+#text {
+	background-color: #867979;
+}
+
+#text h1 {
+	font-size: 3em;
+	text-align: center;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+#text button {
+	background-color: #836460;
+	color: white;
+}
+
+#text button:hover {
+	background-color: #321600;
+}
+
+#intro {
+	background: #fcf6ec;
+	background-size: cover;
+}
+
+#para p{
+	font-weight: 500;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#intro .text-center {
+	background: url(https://images.unsplash.com/photo-1495195134817-aeb325a55b65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60) no-repeat;
+	background-size: cover;
+}
+
+#intro p {
+	font-family: 'Lobster', cursive;
+	word-spacing: 0.5em;
+}
+
+#miss {
+	background: #fcefec;
+	font-family: 'Lobster', cursive;
+	word-spacing: 0.5em;
+}
+
+#menu p {
+	font-family: 'Lobster', cursive;
+	word-spacing: 0.5em;
+}
+
+
+.margin {
+	margin: 75% 0;
+}
+
+.parallax {
+	background: url(https://images.unsplash.com/photo-1546793665-c74683f339c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60) no-repeat fixed 100%;
+	background-size: cover;
+}
+.parallax-inner {
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+.card img{
+	width: 100%;
+	height: 17em;
+}
+
+.gall{
+	
+}
+#view a:hover {
+	text-decoration: none;
+	font-size: 20px;
+	color: #331373;
+}
+
+#view a {
+	color: #6c1373;
+	font-family: 'Montserrat', sans-serif;
+}
+
+footer li {
+	list-style-type: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+	margin-top: 20px;
+}
+
+footer li a {
+	color: white;
+	padding: 10px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+footer a:hover {
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+}
+
+#social a:hover {
+	border: 4px solid white;
+	border-radius: 18px;
+}
+
+#pic img{
+	width: 100%;
+	height: 600px;
+}
+
+#imgBack {
+	background: #9f6060;
+}
+.gal img{
+	width:80%;
+	height:60%;
+}
+.but{
+	color: black;
+	font-weight: bolder;
+	border: #fcf6ec solid 2px;
+	border-radius: 3px;
+	background-color: black;
+
+}

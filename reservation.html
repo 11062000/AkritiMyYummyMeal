@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Patua+One/">
+    <style>
+        body{
+            background-image: linear-gradient(rgb(224, 174, 218),rgb(133, 146, 206));
+            border: 5px black solid;
+            font-family: patua one;
+        }
+        #he{
+            text-align: center;
+            font-size: 9vw;
+            font-weight: bolder;
+            border: 6px solid rgb(71, 71, 146);
+            border-radius: 3px;
+            background:url(33.jpg);
+            padding-bottom: 230px;
+            padding-top: 44px;
+            font-family: algerian;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes example {
+            0%   {color:rgb(235, 75, 101);}
+            25%  {color: yellow;}
+            50%  {color: rgb(155, 155, 224);}
+            75%  {color: rgb(243, 111, 35);}
+            100% {color: rgb(221, 51, 193);}
+        }
+        
+        img{
+            height: 100%;
+            width: 100%;
+            border: 5px solid black;
+
+        }
+        pre{
+            text-align: center;
+            
+        }
+        .sec1{
+            color: rgb(53, 39, 39);
+            padding-top: 67px;
+            font-size: 1.5em;
+        }
+        img{
+            padding-top: 80px;
+            
+        }
+        #policy{
+            text-align: justify;
+            font-size: 1.2em;
+            overflow: hidden;
+        }
+        #po{
+            text-align: center;
+            font-size: 3em;
+            color: brown;
+        }
+        b{
+            color: rgb(124, 30, 30);
+            font-family: p;
+        }
+
+
+        footer li {
+            list-style-type: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+
+        footer li a {
+            color: white;
+            padding: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        footer a:hover {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+        }
+
+        #social a:hover {
+            border: 4px solid white;
+            border-radius: 18px;
+        }
+
+        #nav  {
+    background: #867979;
+    padding: 0.5em;
+}
+
+#nav button {
+    background-color: #836460;
+    color: white;
+}
+
+#nav button:hover {
+    background-color: #321600;
+}
+/*for pop up*/
+*{box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    background:linear-gradient(rgb(111, 123, 192),rgb(223, 164, 186));
+
+  color: rgb(163, 11, 11);
+  border: 3px solid black;
+  font-size: 45px;
+  font-weight: bolder;
+  font-family: algerian;
+  padding: 16px 20px;
+ 
+  cursor: pointer;
+  opacity:1;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background:linear-gradient(rgb(178, 149, 202),rgb(185, 126, 149));
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 2px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #c9bcbc;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+.portion1{
+    border: 1px solid rgb(51, 47, 47);
+  
+    padding: 2px;
+}
+.portion1 h2{
+   font-size: 30px;
+   text-align: center;
+}
+.portion2{
+    border: 1px solid rgb(51, 47, 47);
+  
+    padding: 2px;
+}
+.portion2 h2{
+    font-size: 30px;
+    text-align: center;
+ }
+
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/f42c8d2dbe.js"></script>
+    <title>MyYummyMeal.com</title>
+</head>
+<body>
+
+
+   <section id="nav" class="container-fluid fixed-top">
+
+        <nav>
+            <div class="row">
+            <div class="col-4">
+                <div class="dropdown">
+                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-cutlery" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button onclick= "window.location.href='homeAt.html'" class="dropdown-item" type="button">Home</button>
+                        <button onclick= "window.location.href='services.html'" class="dropdown-item" type="button">Services</button>
+                        <button onclick= "window.location.href='aboutAt.html'" class="dropdown-item" type="button">About Us</button>
+                        <button onclick= "window.location.href='boot.html'" class="dropdown-item" type="button">Contact Us</button>
+                        <button onclick= "window.location.href='menuAt.html'" class="dropdown-item" type="button">Menu</button>
+                        <button onclick= "window.location.href='newgallery.html'" class="dropdown-item" type="button">Gallery</button>
+                        <button onclick= "window.location.href='reservation.html'" class="dropdown-item" type="button">Reservation</button>
+                        <button onclick= "window.location.href='feedbackb.html'" class="dropdown-item" type="button">Feedback</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+        </div>
+        </nav>
+    </section>
+
+
+
+  <h1 id="he">Reservations</h1>
+  <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+              <p class="sec1">
+
+                Reservations preferred. Please call at <br>
+                +91 9871117968, +91 11 6617 5151 <br>
+                or email: <a href="mailto:akritishukla@gmail.com"> reservations.del@MyYummyMeal.com </a>
+                <br>
+
+                <b> Open 7 days a week </b> <br>
+                Lunch <br>
+                12:00noon – 2:30pm <br>
+                (Last order to be placed by 2:30pm) <br>
+
+                Dinner <br>
+                First seating: starts at 7:00pm <br>
+                Second seating: starts at 9:45pm <br>
+                (Last order 10:30pm) <br>
+            </p>
+        </div>
+        <div class="col-md-7">
+          <img src="26.jpg" alt="" class="img-fluid">
+      </div>
+
+  </div>
+</div>
+<br>
+<br>
+<div class="container">
+    <h1 id="po">RESERVATION POLICY</h1>
+    <div class="row" id="policy">
+
+
+        MyYummyMeal is a reservation driven restaurant. We do welcome walk-in guests and will accommodate them as much as possible.
+
+        <b>OPEN 7 DAYS A WEEK:</b>
+        Lunch: 12:00noon – 2:30pm (last order to be placed by 2:30pm) MyYummyMeal follows a strict seating time for dinner i.e. First seating: Starts at 7:00pm Second seating: Starts at 9:45pm (last order 10:30pm)
+        <b>CHILD POLICY</b>
+        To respect the dining experiences of all our guests, we practice a restricted entrance policy only allowing children aged 10 years and above.
+        <b>RESERVATIONS ARE ACCEPTED BY PHONE OR EMAIL.</b>
+        If you would like to make a reservation, please contact our team at +91 9871117968/+91 11 6617 5151 between 10:00am to 10:00pm or email us at reservations.del@MyYummyMeal.com. Please note that an email reservation request can only be treated as confirmed once our reservation executive has replied to the email confirming the reservation.
+        There may be times where our reservation executive may have to call you back to confirm details about your reservation. Please understand this is done only to ensure that we deliver the best experience possible and to maintain proper table spacing times for the day and time requested
+
+        <b>CANCELLATION POLICY / NO SHOWS</b>
+        Due to the limited seating at the restaurant, we encourage all our diners to keep us informed about any change with regards to their reservation. In case you decide to cancel your reservation, we request you kindly give us a call at +91 9871117968 or +91 11 6617 5151, which will enable us to offer your table to other diners whose reservations have been kept on wait list.
+       
+    </div>
+</div>
+<button class="open-button" onclick="openForm()">BOOK NOW</button>
+<div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+     <div class="portion1">
+        <h2>Booking details:</h2>
+        <br>
+  
+        <label for="date"><b>Date</b></label>
+       <input type="date" name="date" id="email" placeholder="26-jan-2017">
+       <br>
+        <label for="email"><b>Time</b></label>
+        <input type="time" name="time" id="email">
+        <br>
+       <label for="no"><b>Party</b></label>
+       <input type="number" name="" id="" required>
+    
+     </div>
+     <div class="portion2">
+        <h2>Contact details:</h2>
+        <label for="name"><b>Name</b></label>
+        <input type="text" name="email" placeholder="Enter Name">
+        
+        <label for="phone"><b>Phone</b></label>
+        <input type="text" name="email" placeholder="Enter phone number">
+        <label for="email"><b>Email</b></label>
+        <input type="email" name="email" placeholder="Enter Email">
+
+     </div>
+      
+  
+      <button type="submit" class="btn">Request Booking</button>
+      <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+
+<footer class="container-fluid bg-dark pt-5">
+    <div class="row">
+        <div class="col-lg-3">
+            <ul>
+                <li><h3>COMPANY</h3></li>
+          <li><a href="homeAt.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="aboutAt.html">About Us</a></li>
+          <li><a href="boot.html">Contact Us</a></li>
+          <li><a href="menuAt.html">Menu</a></li>
+          <li><a href="newgallery.html">Gallery</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="feedbackb.html">Feedback</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <ul>
+                <li><h3>CONTACT</h3></li>
+                <li><a href="#">Help & Support</a></li>
+                <li><a href="#">Partner with us</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <ul>
+                <li><h3>LEGAL</h3></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="#">Offer Terms</a></li>
+            </ul>
+        </div>
+        <div id="social" class="col-lg-3">
+            <ul>
+                <li><h3>SOCIAL MEDIA</h3></li>
+                <li class="d-lg-inline pr-lg-1"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                <li class="d-lg-inline pr-lg-1"><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                <li class="d-lg-inline pr-lg-1"><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                <li class="d-lg-inline"><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <h4 class="text-center" style=" color: white;">&#169 2020 MyYummyMeal</h4>
+        </div>
+        <div class="col-lg-4"></div>
+    </div>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script>
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

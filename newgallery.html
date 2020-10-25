@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+  <script src="https://use.fontawesome.com/f42c8d2dbe.js"></script>
+
+
+  <style>
+    body{
+      border: 2px 2px black;
+      background:linear-gradient(rgb(91, 91, 223),rgb(216, 111, 151));
+
+
+    }
+    h1{
+      font-size: 4.3vw;
+      font-family: 'algerian', cursive;
+      line-height: 1.4;
+      font-weight: bolder;
+      letter-spacing: 0.5rem;
+      text-align: center;
+      margin-top: 70px;
+      text-shadow: rgb(85, 54, 81) 2px 3px;
+
+      animation-name: example;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+
+    }
+    @keyframes example {
+      0%   {color:rgb(235, 75, 101);}
+      25%  {color: yellow;}
+      50%  {color: rgb(155, 155, 224);}
+      75%  {color: rgb(243, 111, 35);}
+      100% {color: rgb(221, 51, 193);}
+    }
+    .maindiv{
+      margin-top:800px;
+      width:88%;
+      height:400px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform:translate(-50%,-50%);
+
+      background-size: 100% 100%;
+      box-shadow: 1px 2px 10px 5px white;
+
+    }
+    .maindiv img{
+      height: 400px;
+      width: 88%;
+    }
+
+    footer li {
+      list-style-type: none;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    footer {
+      margin-top: 20px;
+    }
+
+    footer li a {
+      color: white;
+      padding: 10px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    footer a:hover {
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+    }
+
+    #social a:hover {
+      border: 4px solid white;
+      border-radius: 18px;
+    }
+
+    .carousel-inner img{
+      filter: grayscale(0%);
+      border: 6px black solid;
+    }
+    .mySlide img{
+      width: 88%;
+      height: 480px;
+    }
+
+    #nav button {
+  background-color: #836460;
+  color: white;
+}
+
+#nav button:hover {
+  background-color: #321600;
+}
+
+#nav  {
+  background: #867979;
+  padding: 0.5em;
+}
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Position the image container (needed to position the left and right arrows) */
+        .container {
+          position: relative;
+        }
+        
+        /* Hide the images by default */
+        .mySlides {
+          display: none;
+        }
+        
+        
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+          cursor: pointer;
+        }
+        
+        /* Next & previous buttons */
+        .prev,
+        .next {
+          cursor: pointer;
+          position: absolute;
+          top: 20%;
+          width: auto;
+          padding: 16px;
+          margin-top: 100px;
+          color: rgb(12, 12, 12);
+          background-color: antiquewhite;
+          font-weight: bolder;
+          font-size: 20px;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+          -webkit-user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+          background-color: rgba(170, 168, 168, 0.8);
+          color:black;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* Container for image text */
+        .caption-container {
+          text-align: center;
+          background-color: #222;
+          padding: 2px 16px;
+          color: white;
+        }
+        
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Six columns side by side */
+        .column {
+          float: left;
+          width: 16.66%;
+        }
+        
+        /* Add a transparency effect for thumnbail images */
+        .demo {
+          opacity: 0.6;
+        }
+        
+        .active,
+        .demo:hover {
+          opacity: 1;
+        }
+        .carousel-inner img{
+          height: 450px;
+          width: 88%;
+        }
+        .choti img{
+          width:10px;
+        }
+
+  </style>
+  <title>MyYummyMeal.com</title>
+</head>
+<body>
+
+
+  <section id="nav" class="container-fluid fixed-top">
+
+    <nav>
+      <div class="row">
+      <div class="col-4">
+        <div class="dropdown">
+          <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-cutlery" aria-hidden="true"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <button onclick= "window.location.href='homeAt.html'" class="dropdown-item" type="button">Home</button>
+            <button onclick= "window.location.href='services.html'" class="dropdown-item" type="button">Services</button>
+            <button onclick= "window.location.href='aboutAt.html'" class="dropdown-item" type="button">About Us</button>
+            <button onclick= "window.location.href='boot.html'" class="dropdown-item" type="button">Contact Us</button>
+            <button onclick= "window.location.href='menuAt.html'" class="dropdown-item" type="button">Menu</button>
+            <button onclick= "window.location.href='newgallery.html'" class="dropdown-item" type="button">Gallery</button>
+            <button onclick= "window.location.href='reservation.html'" class="dropdown-item" type="button">Reservation</button>
+            <button onclick= "window.location.href='feedbackb.html'" class="dropdown-item" type="button">Feedback</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-4"></div>
+      <div class="col-4"></div>
+    </div>
+    </nav>
+  </section>
+
+
+  <h1>OUR GALLERY:</h1>
+  <!-- <div class="maindiv"></div> -->
+  <!-- cards ka portion chalu -->
+   <div class="container">
+    <div class="row h-10 slide">
+      <div class="col-lg-12 col-md-12 col-sm-6 col-12 rw-4">
+
+        <div id="carouselExampleIndicators" class="carousel slide img-fluid" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active mySlides">
+              <img src="26.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item mySlides" >
+              <img src="hA13.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item mySlides" >
+              <img src="28.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item mySlides">
+              <img src="31.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item mySlides">
+              <img src="32.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item  mySlides">
+              <img src="33.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item mySlides">
+              <img src="indian-accent-interior.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item mySlides">
+              <img src="hA12.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item mySlides">
+              <img src="hA22.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span aria-hidden="true"></span>
+            <span class="sr-only"><a class="prev" onclick="plusSlides(-1)">❮</a></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span  aria-hidden="true"></span>
+                <span class="sr-only">  <a class="next" onclick="plusSlides(1)">❯</a></span>
+              </a>
+            </div> 
+          </div> 
+        </div>
+   </div>
+<!--         
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a> -->
+      
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+      </div>
+      <div>
+        <div class="container-fluid">
+          
+            
+          <div class="row choti">
+            <div class="column">
+              <img class="demo cursor" src="26.jpg" style="width:100%" onclick="currentSlide(1)" alt="Welcome!!!">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="hA13.jpg" style="width:100%" onclick="currentSlide(2)" alt="Reasonable price">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="28.jpg" style="width:100%" onclick="currentSlide(3)" alt="Tasty food!!!">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="31.jpg" style="width:100%" onclick="currentSlide(4)" alt="Hygeinic food">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="32.jpg" style="width:100%" onclick="currentSlide(5)" alt="Top class Chefs!!">
+            </div>    
+            <div class="column">
+              <img class="demo cursor" src="33.jpg" style="width:100%" onclick="currentSlide(6)" alt="Awesome food and meal!!!">
+            </div>
+           
+            </div>
+        </div>
+        
+      </div>
+
+      
+      
+      <!-- <div class="maindiv2"></div> -->
+      <footer class="container-fluid bg-dark pt-5">
+        <div class="row">
+          <div class="col-lg-3">
+            <ul>
+              <li><h3>COMPANY</h3></li>
+          <li><a href="homeAt.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="aboutAt.html">About Us</a></li>
+          <li><a href="boot.html">Contact Us</a></li>
+          <li><a href="menuAt.html">Menu</a></li>
+          <li><a href="newgallery.html">Gallery</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="feedbackb.html">Feedback</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <ul>
+              <li><h3>CONTACT</h3></li>
+              <li><a href="#">Help & Support</a></li>
+              <li><a href="#">Partner with us</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <ul>
+              <li><h3>LEGAL</h3></li>
+              <li><a href="terms.html">Terms & Conditions</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="#">Offer Terms</a></li>
+            </ul>
+          </div>
+          <div id="social" class="col-lg-3">
+            <ul>
+              <li><h3>SOCIAL MEDIA</h3></li>
+              <li class="d-lg-inline pr-lg-1"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+              <li class="d-lg-inline pr-lg-1"><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+              <li class="d-lg-inline pr-lg-1"><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+              <li class="d-lg-inline"><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4"></div>
+          <div class="col-lg-4">
+            <h4 class="text-center" style=" color: white;">&#169 2020 MyYummyMeal</h4>
+          </div>
+          <div class="col-lg-4"></div>
+        </div>
+      </footer>
+
+
+      <script>
+      var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+
+
+    </body>
+
+    </html>

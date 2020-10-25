@@ -1,0 +1,68 @@
+#nav button {
+	background-color: #bb4f40;
+	color: white;
+}
+
+	body{
+		background: linear-gradient(rgb(231, 196, 219),rgb(172, 164, 201));
+	}
+
+
+#nav button:hover {
+	background-color: #c0dd18;
+}
+#nav  {
+	background: #867979;
+	padding: 0.5em;
+}
+
+#list {
+	background: url(hA26.jpg);
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+}
+
+#show {
+	background: rgba(0,0,0,0.5);
+	border-radius: 18px;
+}
+
+#show ul li {
+	list-style-type: none;
+}
+
+#show ul li a {
+	color: white;
+	font-size: 1.5em;
+}
+
+#show ul li a:hover {
+	text-decoration: none;
+	font-size: 1.8em;
+}
+
+footer li {
+	list-style-type: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+	margin-top: 20px;
+}
+
+footer li a {
+	color: white;
+	padding: 10px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+footer a:hover {
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+}
+
+#social a:hover {
+	border: 4px solid white;
+	border-radius: 18px;
+}

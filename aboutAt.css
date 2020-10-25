@@ -1,0 +1,54 @@
+#nav button {
+	background-color: #836460;
+	color: white;
+}
+body{
+	background: linear-gradient(rgb(231, 196, 219),rgb(172, 164, 201));
+}
+
+#nav button:hover {
+	background-color: #321600;
+}
+#nav  {
+	background: #867979;
+	padding: 0.5em;
+}
+
+#pic {
+	background: rgba(0,0,0,0.2);
+}
+
+#content {
+	background: #f0e5e7;
+}
+
+#content p {
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+footer li {
+	list-style-type: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+	margin-top: 20px;
+}
+
+footer li a {
+	color: white;
+	padding: 10px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+footer a:hover {
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+}
+
+#social a:hover {
+	border: 4px solid white;
+	border-radius: 18px;
+}

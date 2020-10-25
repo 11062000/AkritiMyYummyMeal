@@ -1,0 +1,345 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }    
+  body{
+    background-image: linear-gradient(rgb(147, 176, 214),pink);
+    background-size: cover;
+    background-attachment: fixed;
+    
+    /* font-family: new timr roman; */
+  }
+
+
+  input[type=text],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .container {
+    border-radius: 5px;
+    
+    padding: 20px;
+    margin-right:0px 85px;
+    opacity: 0.98;
+    box-shadow:10px 10px black;
+
+
+
+    background-image: linear-gradient(rgb(110, 116, 233), rgb(197, 105, 120));
+
+  }
+  .heading{
+    background:url(26.jpg);
+
+    margin-bottom: 30px;
+    
+    height:21vw;
+  }
+
+  .heading h3{
+      margin-top: 23px;
+    font-size: 10vw;
+    text-align: center;   
+    color: #f0e6e6;
+    vertical-align: middle;
+ 
+
+  }
+  .heading p{
+    font-size: 2.8vw;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+  }
+  @keyframes example {
+    0%   {color:rgb(235, 75, 101);}
+    25%  {color: yellow;}
+    50%  {color: rgb(155, 155, 224);}
+    75%  {color: rgb(243, 111, 35);}
+    100% {color: rgb(221, 51, 193);}
+  }
+
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  .one input{
+    background-image: linear-gradient(rgb(118, 118, 197),pink);
+    border: 3px black solid;
+  }
+  .one textarea{
+    background-image: linear-gradient(rgb(118, 118, 197),pink);
+    border: 3px black solid;
+  }
+  .one select{
+    background-image: linear-gradient(rgb(118, 118, 197),pink);
+    border: 3px solid black;
+  }
+  .one label{
+    font-weight: bold;
+    font-size: 1.4vw;
+
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  @media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+      
+    }
+  }
+  .formm input{
+    background-image: linear-gradient(rgb(57, 57, 173), rgb(194, 92, 107));
+
+
+  }
+  #he{
+    text-align: center;
+    font-size: 23px;
+    color: rgb(160, 92, 92);
+    font-weight: bolder;
+    border: 6px solid rgb(71, 71, 146);
+    border-radius: 3px;
+    background:url(33.jpg);
+    padding-bottom: 194px;
+    padding-top: 44px;
+    font-family: algerian;
+
+  }
+  
+  .h2{
+    text-align: center;
+    font-family:castellar;
+    font-weight:bolder;
+    box-shadow:rgb(63, 57, 57);
+    font-size: 4vw;
+  }
+  span{
+    color: yellow;
+
+  } 
+  #headd{
+    text-align: center;
+
+    font-size:344px;
+    font-family: algerian;
+  }
+
+  footer li {
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  footer {
+    margin-top: 20px;
+  }
+
+  footer li a {
+    color: white;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  footer a:hover {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+  }
+
+  #social a:hover {
+    border: 4px solid white;
+    border-radius: 18px;
+  }
+
+   #nav button {
+background-color: #836460;
+color: white;
+}
+
+#nav button:hover {
+background-color: #321600;
+}
+#nav  {
+background: #867979;
+padding: 0.5em;
+}
+      /*for user rating*/
+      * {
+        box-sizing: border-box;
+      }
+      
+     
+      
+      .headin {
+        font-size: 25px;
+        margin-right: 25px;
+       
+        font-weight: bold;
+        color: #321600;
+      }
+      
+      .fa {
+        font-size: 25px;
+      }
+      
+      .checked {
+        color: orange;
+      }
+      
+      /* Three column layout */
+      .side {
+        float: left;
+        width: 15%;
+        margin-top: 10px;
+      }
+      
+      .middle {
+        float: left;
+        width: 70%;
+        margin-top: 10px;
+      }
+      
+      /* Place text to the right */
+      .right {
+        text-align: right;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* The bar container */
+      .bar-container {
+        width: 100%;
+        background-color: #f1f1f1;
+        text-align: center;
+        color: white;
+      }
+      
+      /* Individual bars */
+      .bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
+      .bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+      .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+      .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+      .bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+      
+      /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+      @media (max-width: 400px) {
+        .side, .middle {
+          width: 100%;
+        }
+        /* Hide the right column on small screens */
+        .right {
+          display: none;
+        }
+      }
+    /*for persons reviews*/
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+        background-color: #d4aed4;
+        border: 3px solid black;
+        border-radius: 4px;
+      }
+      
+      .price {
+        color: grey;
+        font-size: 22px;
+      }
+      
+      .card button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+      }
+      
+      .card button:hover {
+        opacity: 0.7;
+      }
+      .checked {
+        color: orange;
+      }
+      .unchecked {
+        color: rgb(14, 13, 13);
+      }
+      h4{
+          text-align: center;
+          font-weight: bolder;
+          font-family: algerian;
+          font-size: 6vw;
+      }
+      /* thumbs fun  */
+      .fa {
+        font-size: 50px;
+        cursor: pointer;
+        user-select: none;
+      }
+      
+      .fa:hover {
+        color: darkblue;
+      }
+      .like{
+          font-size: 3vw;
+          font-weight: bold;
+          color: black;
+      }
+   
